@@ -1,0 +1,76 @@
+name: Bug report
+description: Something in a Vobiz SDK, skill, or sample is not working as documented
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please redact credentials (`X-Auth-ID`,
+        `X-Auth-Token`, SIP passwords, webhook secrets) and real phone numbers
+        before you paste anything.
+
+        Found a security vulnerability? Do not file it here — email
+        [piyush@vobiz.ai](mailto:piyush@vobiz.ai) instead.
+
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Which vobiz-ai repository is affected?
+      placeholder: vobiz-ai/Vobiz-Python-SDK
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: SDK / language and version
+      description: The SDK or package version, plus the language runtime version.
+      placeholder: Vobiz Python SDK 1.2.0 on Python 3.12.4
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+      description: What did you observe? Include the full error, HTTP status code, and response body if there is one.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: A minimal code snippet or HTTP request we can run. Credentials and real numbers redacted.
+      placeholder: |
+        1. Call `client.calls.create(...)` with ...
+        2. Observe ...
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: call-uuid
+    attributes:
+      label: call_uuid and approximate time (optional)
+      description: If a live call was involved, this helps us correlate against the platform side.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have searched existing issues for a duplicate
+          required: true
+        - label: I have removed all credentials and real phone numbers from this report
+          required: true

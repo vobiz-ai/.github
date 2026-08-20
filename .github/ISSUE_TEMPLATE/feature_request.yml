@@ -1,0 +1,59 @@
+name: Feature request
+description: Suggest an improvement to a Vobiz SDK, skill, or sample
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Note that the official SDKs (Node.js, Python, Go, Java, Ruby, C#) are
+        generated from the Vobiz OpenAPI specification. Requests for new
+        endpoints or changed method signatures are handled by updating the
+        specification, which then flows into every language.
+
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      description: Which vobiz-ai repository would this change?
+      placeholder: vobiz-ai/Vobiz-Node-SDK
+    validations:
+      required: true
+
+  - type: input
+    id: language
+    attributes:
+      label: SDK / language (if applicable)
+      placeholder: Node.js
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the use case rather than the solution. What are you building, and where does it get awkward today?
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What would you like to see?
+      description: A sketch of the API, command, or behaviour you have in mind.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds you have tried
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I have searched existing issues for a similar request
+          required: true
