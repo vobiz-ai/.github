@@ -20,7 +20,7 @@
 ## Trusted by builders
 
 <p align="center">
-  Jupiter · Paytm Insurance · Shiprocket · KPMG · MobiKwik · Razorpay · Convin · Nephroplus · CraftAI · Intelekt · Bolna · Scaler · CIPL · Maverick · RevRag · Revspot · Ring.ai · VoxLabs · ZuduAI
+  Jupiter · Paytm Insurance · Shiprocket · KPMG · MobiKwik · Razorpay · Convin · Nephroplus · CraftAI · Intelekt · Bolna · Scaler · CIPL · Maverick · RevRag · Revspot · Ringg.ai · VoxLabs · ZuduAI
 </p>
 
 ## From API key to live call in minutes
