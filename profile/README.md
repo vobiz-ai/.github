@@ -38,7 +38,7 @@ Use one integrated stack to provision phone numbers, connect SIP trunks, control
 
 ## Built for real-time AI workloads
 
-| 3M+ | 99.99% | &lt;80 ms | 4.2+ MOS | 30% | &lt;60 min |
+| 8M+ | 99.99% | &lt;80 ms | 4.2+ MOS | 30% | &lt;60 min |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Calls per day | Call completion | Telephony latency | Call quality | Spam-flag reduction | Support turnaround |
 
